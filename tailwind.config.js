@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     screens: {
-      'cell': '450px',
-      // => @media (min-width: 450px) { ... }
+      'cell': '250px',
+      // => @media (min-width: 250px) { ... }
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
 

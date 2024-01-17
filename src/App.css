@@ -9,7 +9,10 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-   #recipe-container {
+   body {
+    padding:.5rem;
+   }
+    #recipe-container {
     grid-template-columns: auto;
    }   
 }

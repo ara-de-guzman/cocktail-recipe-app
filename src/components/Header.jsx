@@ -11,8 +11,8 @@ function Header({ onKeyDownHandle, onChangeHandle }) {
         </Link>
       </div>
 
-      <div className="flex items-center gap-5 justify-between desktop:w-2/3 cell:w-full">
-        <nav className="flex gap-10 w-3/5 cell:hidden tablet:flex ">
+      <div className="flex items-center gap-5 justify-between desktop:w-2/3 cell:w-full cell:relative">
+        <nav className="flex gap-10 w-3/5 tablet:flex desktop:relative cell:absolute cell:mt-32 tablet:mt-0 tablet:relative cell:w-full cell:text-center ">
           {/* <Link to="/random">Random recipe</Link> */}
           <Link to="/non-alcohol" className="hover:text-sky-300">Non Alcohol</Link>
           <Link to="/alcohol" className="hover:text-sky-300">Alcohol</Link>
@@ -20,7 +20,7 @@ function Header({ onKeyDownHandle, onChangeHandle }) {
         <Link to="/" className="flex w-2/3 cell:w-full">
           <input
             type="text"
-            className="bg-stone-200 p-3 rounded-md w-full cell:w-full "
+            className="bg-stone-200 p-3 rounded-md w-full cell:w-full outline-none "
             placeholder="Search for cocktail recipe"
             onKeyDown={onKeyDownHandle}
             onChange={onChangeHandle}
@@ -34,6 +34,7 @@ function Header({ onKeyDownHandle, onChangeHandle }) {
 Header.propTypes = {
   onKeyDownHandle: PropTypes.func,
   onChangeHandle: PropTypes.func,
+
 };
 
 export default Header;
