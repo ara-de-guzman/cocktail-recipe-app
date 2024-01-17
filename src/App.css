@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    background: rgb(251,217,63);
+    overflow-x: hidden;
+    padding: 1rem 2rem;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(75deg, rgba(251,217,63,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+@media screen and (max-width: 450px) {
+   #recipe-container {
+    grid-template-columns: auto;
+   }   
+}
